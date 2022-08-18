@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="pw-container">
+        <div class="pw-header">
+            <div class="pw">
+                <span id="pw">產出的密碼</span>
+                <button id="copy">複製</button>
+            </div>
+        </div>
+        <div class="pw-body">
+            <div class="form-control">
+                <lable for="length">密碼長度</lable>
+                <input type="number" id="len" value="10" min="8" max="30">
+            </div>
+            <div class="form-control">
+                <lable for="upper">是否包含大寫?</lable>
+                <input type="checkbox" id="upper">
+            </div>
+            <div class="form-control">
+                <lable for="lower">是否包含小寫?</lable>
+                <input type="checkbox" id="lower">
+            </div>
+            <div class="form-control">
+                <lable for="number">是否包含數字</lable>
+                <input type="checkbox" id="number">
+            </div>
+            <div class="form-control">
+                <lable for="symbol" >是否包含特殊符號?</lable>
+                <input type="checkbox" id="symbol">
+            </div>
+            <button class="generate" id="generate">產生密碼</button>
+        </div>
+    </div>
+</body>
+<script src="./index.js"></script>
+</html>
